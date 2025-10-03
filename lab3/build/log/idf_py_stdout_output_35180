@@ -1,0 +1,107 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Users\ASUS\esp-idf\v5.5.1\esp-idf\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\ASUS\OneDrive\Desktop\ogo\Week-11-Special_topics\lab3\build\lab3.elf C:\Users\ASUS\OneDrive\Desktop\ogo\Week-11-Special_topics\lab3\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Users\ASUS\esp-idf\v5.5.1\esp-idf\tools\idf.py' '-p' 'COM3'
+�RB��J��ѹesp32: SPI Flash Size : 2MB
+[0;32mI (44) �ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  3 2025 20:27:36[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.0[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a71ch ( 42780) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001a744 vaddr=3ffb0000 size=023f8h (  9208) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001cb44 vaddr=40080000 size=034d4h ( 13524) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14e60h ( 85600) map[0m
+I (143) esp_image: segment 4: paddr=00034e88 vaddr=400834d4 size=09adch ( 39644) load
+[0;32mI (159) esp_image: segment 5: paddr=0003e96c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (166) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (166) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (186) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (186) app_init: Project name:     lab3[0m
+[0;32mI (189) app_init: App version:      63c869e[0m
+[0;32mI (193) app_init: Compile time:     Oct  3 2025 20:25:32[0m
+[0;32mI (198) app_init: ELF file SHA256:  5093b53d0...[0m
+[0;32mI (203) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 3FFB2D00 len 0002D300 (180 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (240) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;32mI (252) spi_flash: detected chip: generic[0m
+[0;32mI (254) spi_flash: flash io: dio[0m
+[0;33mW (257) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (270) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) ADC_ENHANCED: eFuse Two Point: ไม่รองรับ[0m
+[0;32mI (288) ADC_ENHANCED: eFuse Vref: รองรับ[0m
+[0;32mI (288) ADC_ENHANCED: ใช้การปรับเทียบแบบ eFuse Vref[0m
+[0;32mI (298) ADC_ENHANCED: ทดสอบการปรับปรุงความแม่นยำ ADC[0m
+[0;32mI (308) ADC_ENHANCED: เทคนิค: Oversampling + Moving Average Filter[0m
+[0;32mI (318) ADC_ENHANCED: Pin: GPIO34 (ADC1_CH6)[0m
+[0;32mI (318) ADC_ENHANCED: Oversamples: 100, Filter Size: 10[0m
+[0;32mI (318) ADC_ENHANCED: ----------------------------------------[0m
+[0;32mI (338) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (338) ADC_ENHANCED: Raw ADC: 1869 (1.676V)[0m
+[0;32mI (338) ADC_ENHANCED: Oversampled: 1791.5 (1.612V)[0m
+[0;32mI (338) ADC_ENHANCED: Filtered: 1791.5 (1.612V)[0m
+[0;32mI (348) ADC_ENHANCED: [0m
+[0;32mI (2348) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (2348) ADC_ENHANCED: Raw ADC: 1805 (1.624V)[0m
+[0;32mI (2348) ADC_ENHANCED: Oversampled: 1880.1 (1.686V)[0m
+[0;32mI (2358) ADC_ENHANCED: Filtered: 1800.4 (1.620V)[0m
+[0;32mI (2358) ADC_ENHANCED: [0m
+[0;32mI (4358) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (4358) ADC_ENHANCED: Raw ADC: 1803 (1.622V)[0m
+[0;32mI (4358) ADC_ENHANCED: Oversampled: 1885.7 (1.690V)[0m
+[0;32mI (4368) ADC_ENHANCED: Filtered: 1809.8 (1.627V)[0m
+[0;32mI (4368) ADC_ENHANCED: [0m
+[0;32mI (6368) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (6368) ADC_ENHANCED: Raw ADC: 1781 (1.604V)[0m
+[0;32mI (6368) ADC_ENHANCED: Oversampled: 1860.1 (1.669V)[0m
+[0;32mI (6378) ADC_ENHANCED: Filtered: 1816.6 (1.633V)[0m
+[0;32mI (6378) ADC_ENHANCED: [0m
+[0;32mI (8378) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (8378) ADC_ENHANCED: Raw ADC: 1753 (1.581V)[0m
+[0;32mI (8378) ADC_ENHANCED: Oversampled: 1871.4 (1.678V)[0m
+[0;32mI (8388) ADC_ENHANCED: Filtered: 1824.6 (1.640V)[0m
+[0;32mI (8388) ADC_ENHANCED: [0m
+[0;32mI (10388) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (10388) ADC_ENHANCED: Raw ADC: 1783 (1.606V)[0m
+[0;32mI (10388) ADC_ENHANCED: Oversampled: 1841.5 (1.653V)[0m
+[0;32mI (10398) ADC_ENHANCED: Filtered: 1829.6 (1.644V)[0m
+[0;32mI (10398) ADC_ENHANCED: [0m
+[0;32mI (12398) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (12398) ADC_ENHANCED: Raw ADC: 1813 (1.630V)[0m
+[0;32mI (12398) ADC_ENHANCED: Oversampled: 1857.9 (1.667V)[0m
+[0;32mI (12408) ADC_ENHANCED: Filtered: 1836.3 (1.649V)[0m
+[0;32mI (12408) ADC_ENHANCED: [0m
+[0;32mI (14408) ADC_ENHANCED: === การเปรียบเทียบ ===[0m
+[0;32mI (14408) ADC_ENHANCED: Raw ADC: 1791 (1.612V)[0m
+[0;32mI (14408) ADC_ENHANCED: Oversampled: 1806.4 (1.625V)[0m
+[0;32mI (14418) ADC_ENHANCED: Filtered: 1837.8 (1.650V)[0m
+[0;32mI (14418) ADC_ENHANCED: [0m
